@@ -1,0 +1,36 @@
+ADVERTISING SALES PREDICTION — MULTIPLE LINEAR REGRESSION
+Prepared by: Ashok
+
+OBJECTIVE
+Build a Multiple Linear Regression model to estimate sales from advertising budgets for TV, Radio, and Newspaper.
+
+DATASET
+File: Advertising.csv
+Expected columns: TV, Radio, Newspaper, Sales
+
+WORKFLOW
+1. Import the required Python libraries: pandas, NumPy, Matplotlib, and scikit-learn.
+2. Load Advertising.csv and inspect its rows, dimensions, data types, summary statistics, and missing values.
+3. Select TV, Radio, and Newspaper as input features (X), and Sales as the target (y).
+4. Split the dataset into 80% training data and 20% testing data using random_state=42.
+5. Train a LinearRegression model on the training data.
+6. Predict sales for the held-out test records and for a sample advertising budget.
+7. Evaluate predictions using MAE, MSE, RMSE, and R-squared.
+8. Review model coefficients to understand each feature's estimated relationship with sales while holding other features constant.
+9. Visualize actual versus predicted sales and the relationship between each advertising channel and sales.
+
+INTERPRETATION
+- MAE and RMSE summarize typical prediction error in sales units.
+- MSE is the average squared prediction error.
+- R-squared measures the proportion of variation in the test target explained by the model.
+- Coefficients describe estimated associations, not proof of causation.
+
+HOW TO RUN
+1. Keep Advertising.csv and Multiple_Linear_Regression.ipynb in the same folder.
+2. Install dependencies if required:
+   python -m pip install pandas numpy matplotlib scikit-learn jupyter
+3. Start Jupyter Notebook and open Multiple_Linear_Regression.ipynb.
+4. Run the cells from top to bottom.
+
+NOTE
+Results depend on the supplied dataset and the train/test split. Review the metrics produced by the notebook rather than assuming a fixed score.
